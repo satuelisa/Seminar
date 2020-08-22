@@ -1,0 +1,141 @@
+\documentclass{article}	% Always compile at least twice for placements!
+\usepackage[top=2cm, bottom=3cm, outer=1cm, inner=0cm]{geometry}
+
+% -------------------
+% Packages
+% -------------------
+\usepackage{
+	anyfontsize,
+	amssymb,
+	graphicx,
+	mathptmx,
+	t1enc,
+	url,
+	changepage 
+}
+\graphicspath{{../../imgs/}}
+\usepackage[dvipsnames]{xcolor}
+\urlstyle{same}
+\usepackage[pages=some]{background}
+\usepackage[percent]{overpic}
+\usepackage{fancyhdr}
+
+% When using anyfont size, \fontsize{#1}{#2}, #1 should be 
+% approximately 95% the size of #2.
+
+% -------------------
+% Colors
+% -------------------
+
+% -------------------
+% Background Image
+% -------------------
+\backgroundsetup{
+	scale=1,
+	color=black,
+	opacity=0.40,
+	angle=0,
+	contents={%
+  		\begin{overpic}[scale=2]{poster_bg.png} % Background Image
+	     	%\put(60,3){\includegraphics[scale=0.2]{nsf_logo.eps}}  % If NSF funded
+  		\end{overpic}
+	  }%
+}
+
+% -------------------
+% Information
+% -------------------
+
+% University Name
+\newcommand{\universityname}{Universidad Autónoma de Nuevo León}
+% Year
+\newcommand{\conferenceyear}{2}
+\newcommand{\super}{o}
+% Date
+\newcommand{\conferencedate}{4 sep. 2020, 10:00 am}
+\newcommand{\dinnerdate}{WEEKDAY MONTH DAY}
+% First Speaker
+\newcommand{\openspeakername}{Dr. Fulano de Tal}
+\newcommand{\openspeakeruniversity}{Universidad Distinguida}
+% Second Speaker
+\newcommand{\titulo}{Título súper largo y específico que incluye hipótesis, introducción y conclusiones del trabajo}
+% Website URL
+\newcommand{\conferencepage}{\url{http://youtube.com/?v=clave}}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\lhead{\hspace{0.1cm}\includegraphics[width=.18\textwidth]{pisis.png}}
+
+\lfoot{\hspace{1cm}\includegraphics[width=.22\textwidth]{logotipo-uanl-prefooter.png}}
+\cfoot{\hspace{3cm}\includegraphics[width=.12\textwidth]{logotipo-vision-2030.png}}
+\rfoot{\includegraphics[width=.08\textwidth]{fime_gris.png}\hspace{0.2cm}}
+%-----------------------------------------------------
+% Poster Content
+%-----------------------------------------------------
+\pagestyle{fancy}
+\begin{document}
+\pagenumbering{gobble}
+
+% Side Text
+\BgThispage
+\rotatebox[origin=c]{90}{%
+\begin{minipage}{\textheight} \hspace{1.5cm}
+        \begin{minipage}{2cm}
+        \fontsize{58}{60} \selectfont  
+        \conferenceyear\textsuperscript{\super}
+        \end{minipage}
+\fontsize{32}{34} \selectfont  
+\hspace{1.5cm}\color{ForestGreen} Ciclo de seminarios 2020 \\[0.1cm]
+\phantom{|} \hspace{1.78in} \color{NavyBlue} Posgrado en Ingeniería de Sistemas \color{black} \par
+\rule{9.4in}{0.2cm}
+\end{minipage}
+}
+% Do not remove commented line
+% Top Text
+\begin{minipage}[l][.7\textheight][t]{.90\linewidth} \centering \vspace{-1.5in}
+\begin{adjustwidth}{50pt}{100pt}
+\begin{center}
+\fontsize{20}{45} \selectfont  
+\textbf{\universityname} \par\vspace{-0.5cm}
+\textbf{Facultad de Ingeniería Mecánica y Eléctrica} \par\vspace{0.3in}
+\fontsize{24}{26} \selectfont  
+
+% Conferencista
+\textbf{Conferencista importante} \par\vspace{0.3cm}
+\fontsize{32}{34} \selectfont  
+\textbf{\openspeakername} \par\vspace{0.3cm}
+\fontsize{18}{20} \selectfont  
+\textsf{\openspeakeruniversity} \par\vspace{0.5cm}
+
+% Trabajo
+\end{center}
+\fontsize{28}{30} \selectfont  
+\textbf{\titulo} \par\vspace{0.3in}
+\begin{center}
+\fontsize{24}{26} \selectfont  
+\textbf{Inicio: \conferencedate} \par\vspace{0.3in}
+\fontsize{14}{16} \selectfont
+\includegraphics[scale=.4]{qr_plantilla.eps} \par\vspace{-0.3cm}
+\textbf{\conferencepage} \par
+\fontsize{16}{32} \selectfont 
+
+% Resumen
+\textbf{Resumen} \par\vspace{0.3cm}
+\end{center}
+\fontsize{14}{16} \selectfont 
+\textsf{In ut lectus quis neque suscipit euismod. Donec justo nunc, tristique in purus non, bibendum luctus eros. Integer eget nunc ex. Aenean gravida pellentesque consequat. Vivamus nulla orci, rhoncus vel scelerisque ac, dictum consequat risus. Etiam dignissim suscipit dapibus. Mauris aliquet tortor magna, sit amet efficitur ligula accumsan ut. Ut non pellentesque velit. Nam sit amet enim ante. Phasellus varius est ut rutrum semper. Suspendisse sagittis vitae velit quis pharetra. Duis dignissim, dui sed ornare pellentesque, nibh lorem dapibus mauris, et egestas ipsum risus quis ligula. Nullam molestie luctus metus, sed elementum diam condimentum et.}
+
+\rule{0.72\textwidth}{0.1cm} \par\vspace{0.3cm}
+
+\fontsize{10}{15} \selectfont  
+\begin{center}
+\fontsize{11}{11}
+%\textbf{Una consideración importante.} \par
+%\textbf{Cualquier otra consideración adicional.} \par
+
+\end{center}
+\end{adjustwidth}
+\end{minipage}
+
+\clearpage
+\end{document}  
