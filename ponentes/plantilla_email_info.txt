@@ -2,10 +2,10 @@ Estimado [Grado y Nombre del Ponente],
 
 Le escribimos el presente con el fin de informarle los detalles de su próxima presentación en el Segundo Ciclo de Seminarios 2020 del Posgrado en Ingeniería en Sistemas de la UANL.
 
- Su ponencia está agendada para el próximo [fecha], bajo el título [título], y podrá verse de forma libre a través del siguiente enlace: [enlace]. La exposición tiene una duración de 15 a 30 minutos, dejando el tiempo restante para responder preguntas del público. La siguiente información será compartida con la publicidad del seminario: [La siguiente información es recabada a priori por el comité de ponentes]
-•	[Breve biografía]
-•	[Institución de procedencia]
-•	[Algún website]
+ Su ponencia está agendada para el próximo [fecha, hora] (UTC-05:00), bajo el título [título], y podrá verse de forma libre a través del siguiente enlace: [enlace]. La exposición tiene una duración de 15 a 30 minutos, dejando el tiempo restante para responder preguntas del público. La siguiente información será compartida con la publicidad del seminario: [La siguiente información es recabada a priori por el comité de ponentes]
+•	Biografía: [Breve biografía]
+•	Institución de procedencia: [Institución de procedencia]
+•	Website: Algún website]
 
 Le pedimos de favor nos haga saber de alguna modificación que le gustaría hacer a estos datos, y si gusta, nos haga llegar una fotografía para incluirla. Además, le solicitamos por favor un resumen de su plática, con no más de cien palabras. 
 
