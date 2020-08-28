@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{transparent}
+\usepackage{eso-pic}
+
+\usepackage[letterpaper, landscape, left=3.5cm,right=1.5cm,top=1.7cm,bottom=0.5cm]{geometry}
+
+\usepackage[pages=all]{background}
+%configuración
+\backgroundsetup{
+ scale=1, %escala de la imagen, es recomendable que sea del mismo tamaño que el pdf
+ color=black, %fondo a usar para transparencia
+ opacity=100, %nivel de transparencia
+ angle=0, %en caso de querer una rotación
+ contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{wall-transparente.png} %nombre de la imagen a utilizar como fondo
+ }%
+}
+
+
+
+
+
+\def\titulo{Título de la plática}
+\def\ponente{Nombre del ponente}
+\def\pisis{Posgrado en Ingeniería de Sistemas}
+\def\seminario{Segundo Ciclo de Conferencias 2020}
+
+% Coloca el mes con mayúscula inicial
+\def\fecha{Fecha}
+
+\def\organizador{Dra. Satu Elisa Schaeffer}
+\def\coordinador{Dr. César E. Villarreal Rodríguez}
+
+\def\uanl{\textsc{Universidad Autónoma de Nuevo León} }
+\def\fime{\textsc{Facultad de Ingeniería Mecánica y Eléctrica} }
+
+\doublespacing 
+
+\begin{document}
+
+
+
+\AddToShipoutPicture*{
+	\put(10,240){
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			\includegraphics[scale=.4]{pisis.png}%
+			\vfill
+		}
+	}
+	\put(-220,245){
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			\includegraphics[scale=.4]{uanl-color.png}%
+			\vfill
+		}
+	}
+\put(250,250){
+	\parbox[b][\paperheight]{\paperwidth}{%
+		\vfill
+		\centering
+		\includegraphics[scale=.4]{fime-completo.png}%
+		\vfill
+	}
+}
+	\put(0,0){%
+		\transparent{0.7}\textcolor{white}{\rule{\paperwidth}{\paperheight}}
+	}
+}
+
+\vspace*{1.2 cm}
+\begin{center}
+\begin{Large}
+La \fime y la \\ \uanl \\
+otorgan la presente \\ \vspace*{0.2cm}
+\end{Large}
+
+\vspace*{0.5cm}
+\begin{huge}
+ \textsc{CONSTANCIA} 
+\end{huge}
+\vspace*{0.7cm}
+ 
+
+ \begin{Large} al \end{Large} 
+\begin{LARGE}
+\textbf{\ponente} 
+\end{LARGE}
+
+\vspace*{0.5cm}
+\begin{Large}
+por su participación como ponente del trabajo \textbf{\titulo}, el día \textbf{\fecha} en el \textbf{\seminario} del \pisis. %\\~\\ 
+
+
+\vspace*{3.7 cm}
+\begin{tabular}{p{37mm}p{21mm}p{12mm}p{21mm}p{37mm}}	
+	\cline{1-2} \cline{4-5}
+	\multicolumn{2}{c}{\organizador} & & \multicolumn{2}{c}{\coordinador} \\
+	\multicolumn{2}{c}{Organizadora del Seminario}   & & \multicolumn{2}{c}{Coordinador del Posgrado}   \\[17mm]
+\end{tabular}
+\end{Large}
+\end{center}
+
+\vspace*{-1.5cm}
+\begin{flushleft}
+\includegraphics[scale=0.2]{vision.png}
+\end{flushleft}
+
+\vspace*{-2cm}
+\begin{flushright}
+Ciudad Universitaria C.P 66455\\
+San Nicolás de los Garza, Nuevo León, México.
+\end{flushright}
+
+\end{document}
