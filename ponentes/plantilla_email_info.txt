@@ -1,6 +1,6 @@
 Estimado [Grado y Nombre del Ponente],
 
-Le escribimos el presente con el fin de informarle los detalles de su próxima presentación en el Segundo Ciclo de Seminarios 2020 del Posgrado en Ingeniería en Sistemas de la UANL.
+Le escribimos el presente con el fin de informarle los detalles de su próxima presentación en el Segundo Ciclo de Conferencias 2020 del Posgrado en Ingeniería en Sistemas de la UANL.
 
  Su ponencia está agendada para el próximo [fecha, hora] (UTC-05:00), bajo el título [título], y podrá verse de forma libre a través del siguiente enlace: [enlace]. La exposición tiene una duración de 15 a 30 minutos, dejando el tiempo restante para responder preguntas del público. La siguiente información será compartida con la publicidad del seminario: [La siguiente información es recabada a priori por el comité de ponentes]
 •	Biografía: [Breve biografía]
@@ -16,5 +16,5 @@ Sin más por el momento, quedamos a su disposición para cualquier inquietud que
 Aténtamente,
 
 Comité de ponencias
-Ciclo de seminarios Agosto 2020 – Enero 2021
+Ciclo de conferencias Agosto 2020 – Enero 2021
 Posgrado en ingeniería de Sistemas, FIME, UANL.
