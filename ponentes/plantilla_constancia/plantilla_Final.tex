@@ -1,0 +1,106 @@
+\documentclass[15pt,a4paper]{scrartcl}              
+\usepackage[landscape,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry} 
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+
+
+% configuración para el fondo
+\usepackage[pages=all]{background}
+\backgroundsetup{
+	scale=1, %escala de la imagen, es recomendable que sea del mismo tamaño que el pdf
+	color=black, %fondo a usar para transparencia
+	opacity=0.5, %nivel de transparencia
+	angle=0, %en caso de querer una rotación
+	contents={%
+		\includegraphics[width=\paperwidth,height=\paperheight]{fondo.png} 
+	}
+}
+
+
+\def\signature#1#2{\parbox[b]{1in}{\smash{#1}\vskip12pt}
+	\hfill \parbox[t]{2.8in}{\shortstack{\vrule width 3.2in height 0.4pt\\\small#2}}}
+
+%Datos del ponente
+%¡¡¡Lo unico que se debe modificar del archivo!!!
+
+\newif\ifMujer\Mujerfalse % !!!! CAMBIAR según sea el caso
+%\newif\ifMujer\Mujertrue
+
+
+\newcommand{\nombre}{José Arturo Berrones Santos}
+\newcommand{\tituloponencia}{Comunicación de la Ciencia}
+\newcommand{\fecha}{4 de septiembre del 2020} %la fecha va en el formato: <día en dígitos> de <mes en letra> del 2020
+
+
+\begin{document}
+	\thispagestyle{empty}
+	
+	%Logos uanl - fime y encabezado%
+	\noindent
+	\begin{minipage}[l]{2cm} 
+		\includegraphics[height=0.11\paperheight]{uanl_logo.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[c]{20cm} 
+		\vspace{0.3cm}
+		\centering \setstretch{1.5} {
+			{\large \textbf{La Universidad Autónoma de Nuevo León}}\\
+			\vspace{0.3cm}
+			{\normalsize a través de la}\\
+			\vspace{0.3cm}
+			{\large  \textbf{Facultad de Ingeniería Mecánica y Eléctrica}}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[r]{2cm}
+		\hspace*{-2.4cm}
+		\includegraphics[height=0.11\paperheight]{fime_footer_gris.png}
+	\end{minipage}
+	\hfill
+	
+	%Cuerpo del diploma
+	\vspace{1cm}
+	\centering \setstretch{1.5}  
+	{	{\normalsize otorga la presente constancia a\\}
+		\vspace{0.2cm}
+		{\large \textbf{\nombre}\\}
+		\vspace{0.2cm}
+		{\normalsize por su participación como \ifMujer{expositora }\else{expositor }\fi de la ponencia\\}
+		\vspace{0.2cm}
+		{\large \textbf{``\tituloponencia'',}\\}
+		\vspace{0.2cm}
+		{ en el $2^{\circ}$ Ciclo de Conferencias 2020 del Posgrado en Ingeniería de Sistemas.}
+	}
+	
+	\vspace{0.8cm}
+	\centering{ \footnotesize
+	ALERE FLAMMAM VERITATIS\\
+	A \fecha \\
+	Cd. Universitaria, San Nicolás de los Garza} 
+	
+	\vspace{1.5cm}
+	
+	%Firmas
+	\begin{minipage}[l]{1.5cm}
+		\hspace*{-0.8cm}
+		\includegraphics[scale=0.35]{pisis_gris.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[c]{7cm}
+		\centering {\small
+		\signature{}{Dra. Satu Elisa Schaeffer \\ Coordinadora del Seminario}}
+	\end{minipage} 
+	\hfill
+	\begin{minipage}[c]{7cm}
+		\centering {\small
+		\signature{}{Dr. César Emilio Villarreal Rodríguez \\ Coordinador Académico}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[r]{2cm}
+	\hspace*{-0.5cm}
+		\includegraphics[scale=0.25]{uanl_vision.png}
+	\end{minipage}
+	
+\end{document}
