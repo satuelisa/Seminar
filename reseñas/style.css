@@ -8,7 +8,9 @@
       padding-left: 3%;
       padding-right: 3%;
     }
-    
+    #links {
+       text-decoration: none;
+    }
     #ponente{
       width: 70%;
       padding: 30px;
@@ -19,7 +21,7 @@
     }
 
     #datos{
-      padding-left: 5%;
+      padding-left: 10%;
     }
 
     #autor{
@@ -38,6 +40,7 @@
     #texto{
       padding-left: 5%;
       font-size: 1.2em;
+      text-align: justify;
     }
     .section {
       clear: both;
@@ -148,7 +151,7 @@
     }
     .span_3_of_4 {
       width: 68%;
-      padding: 1%;
+      padding: .2%;
     }
     .span_2_of_4 {
       width: 46%;
