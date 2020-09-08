@@ -182,3 +182,61 @@
         margin-right: auto;
       }
     }
+
+    @media only screen and (max-width: 768px) {
+      .col { margin: 1% 0 1% 0%;}
+      .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 90%; }
+      .span_1_of_4,.span_2_of_4 ,.span_3_of_4 ,.span_4_of_4 {width: 90%;}
+      #logo2,#logo3{
+        padding-left: 0%;
+      }
+
+      #one { 
+        float: none;
+        width:auto;
+      }
+
+      #ponente {
+        width: 80%;
+        padding: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #map{
+        width:600px; 
+        height:450;
+      }
+      .contacto{
+        padding-left: 5%;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .col { margin: 1% 0 1% 0%;}
+      .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 90%; }
+      .span_1_of_4,.span_2_of_4 ,.span_3_of_4 ,.span_4_of_4 {width: 90%;}
+      #logo2,#logo3{
+        padding-left: 0%;
+      }
+
+      #one { 
+        float: none;
+        width:auto;
+      }
+
+      #ponente {
+        width: 80%;
+        padding: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #map{
+        width:600px; 
+        height:450;
+      }
+      .contacto{
+        padding-left: 5%;
+      }
+    }
