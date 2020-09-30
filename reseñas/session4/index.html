@@ -100,7 +100,7 @@
             </td>
             <!-- END SEMBLANZA -->
           </tr>
-          <tr><td><hr style="background-color: #f9d437;"> <br><br><br><br><br><br><br><br><br><br></td></tr>
+          <tr><td><hr style="background-color: #f9d437;"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></td></tr>
         </table>
       </div>
       <!-- START INTRODUCCION -->
@@ -119,14 +119,11 @@
           El Dr. Javier Bustos comenta que, al inicio del proyecto fue necesario definir robustez en la red, lo que la SUBTEL entendía como: “Si se cae la conexión, ¿cuál es el porcentaje de red afectada? o ¿cuántos quedarían aislados al servicio?”. La idea de SUBTEL era tener un sistema dividido en cuatro componentes: analizador de robustez, análisis rápido de los datos, la cantidad de dinero que se necesitaba invertir y consultas online que debían ser respondidas rápidamente.
           El proyecto, tenía como información el mapa de la fibra óptica nacional, mapas de caminos, rutas de ferry y mapas de red eléctrica, por los cuales sería posible instalar la fibra. Por otra parte, Chile se divide en regiones, cada región se divide en provincias, y a su vez, las provincias se dividen en comunas. A partir de esto, quedó definida la robustez del servicio como la interconexión de dos comunas con por lo menos dos caminos disjuntos. Una vez teniendo la información de las posibles trayectorias de la fibra, un primer intento de obtención de la solución fue calcular las rutas o caminos entre cada par de  comunas con la ayuda del algoritmo de Dijkstra, en una primera ejecución se encontró la ruta más corta entre dos comunas, el número de comunas considerado fue de 77,991; posteriormente se quitó la primera ruta más corta de la red y se ejecutó nuevamente el algoritmo, encontrándose de esta manera una segunda ruta; sin embargo, en esta primera solución se presentaron algunos inconvenientes como los elevados costos de agregar líneas debido a la gran cantidad de caminos encontrados en la solución, los cuales fueron 78,209 caminos, además era necesario verificar si los caminos propuestos eran factibles o viables, ya que en algunos casos no era posible la conexión entre comunas y hacía necesario ejecutar el algoritmo nuevamente.
           Debido a la necesidad de encontrar una mejor solución, se reformuló el problema reduciendo el número de comunas a 346, con una matriz de incidencia más pequeña, también se definió una nueva métrica de robustez, en la que cada comuna debía estar conectada de forma disjunta con otras dos comunas.
-        </p>
-      </div>
-      <div class="col span_4_of_4">
-        <p  id="texto" >
-           El nuevo problema fue planteado con programación entera y fue resuelto con el motor de optimización CPLEX, el método encontró una solución con una cobertura del 76.6% de conectividad de las comunas, que, si bien era una solución mejor que la primera, dejaba sin los beneficios de robustez a algunas zonas alejadas de por ejemplo, Santiago y sus alrededores.
+          El nuevo problema fue planteado con programación entera y fue resuelto con el motor de optimización CPLEX, el método encontró una solución con una cobertura del 76.6% de conectividad de las comunas, que, si bien era una solución mejor que la primera, dejaba sin los beneficios de robustez a algunas zonas alejadas de por ejemplo, Santiago y sus alrededores.
           Al tener algunas limitaciones de la propuesta hecha con la solución simplificada y con el objetivo de mejorar la solución actual, se implementó el algoritmo de Suurballe & Tarjan buscando encontrar un óptimo a la primera definición de robustez, el algoritmo generó una gran componente conectada que  cumple con los criterios de robustez originales y además es un 27% más barata. Sin embargo, a pesar de que la solución simplificada era un poco más cara, tenía algunas ventajas, por ejemplo los caminos se desviaban de rutas más propensas a desastres naturales, lo que la hacía más robusta la solución.
         </p>
       </div>
+
       <!-- END RESUMEN -->
 
       <!-- START CONCLUSIONES -->
