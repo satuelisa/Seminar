@@ -73,7 +73,7 @@
           </tr>
           <tr>
             <td style="padding-left: 5%;">
-            	<br>
+              <br>
               <a href="http://pisis.fime.uanl.mx/" target="_blank" style="text-decoration: none;">Posgrado en Ingeniería de Sistemas</a>
               <br>
             </td>
@@ -116,11 +116,13 @@
       <div class="col span_3_of_4">
         <h4 id="titulos"> <u>Resumen</u> </h4>
         <p  id="texto">
-          El Dr. Javier Bustos comenta que, al inicio del proyecto fue necesario definir robustez en la red, lo que la SUBTEL entendía como: “Si se cae la conexión, ¿cuál es el porcentaje de red afectada? o ¿cuántos quedarían aislados al servicio?”. La idea de SUBTEL era tener un sistema dividido en cuatro componentes: analizador de robustez, análisis rápido de los datos, la cantidad de dinero que se necesitaba invertir y consultas online que debían ser respondidas rápidamente.
-          El proyecto, tenía como información el mapa de la fibra óptica nacional, mapas de caminos, rutas de ferry y mapas de red eléctrica, por los cuales sería posible instalar la fibra. Por otra parte, Chile se divide en regiones, cada región se divide en provincias, y a su vez, las provincias se dividen en comunas. A partir de esto, quedó definida la robustez del servicio como la interconexión de dos comunas con por lo menos dos caminos disjuntos. Una vez teniendo la información de las posibles trayectorias de la fibra, un primer intento de obtención de la solución fue calcular las rutas o caminos entre cada par de  comunas con la ayuda del algoritmo de Dijkstra, en una primera ejecución se encontró la ruta más corta entre dos comunas, el número de comunas considerado fue de 77,991; posteriormente se quitó la primera ruta más corta de la red y se ejecutó nuevamente el algoritmo, encontrándose de esta manera una segunda ruta; sin embargo, en esta primera solución se presentaron algunos inconvenientes como los elevados costos de agregar líneas debido a la gran cantidad de caminos encontrados en la solución, los cuales fueron 78,209 caminos, además era necesario verificar si los caminos propuestos eran factibles o viables, ya que en algunos casos no era posible la conexión entre comunas y hacía necesario ejecutar el algoritmo nuevamente.
-          Debido a la necesidad de encontrar una mejor solución, se reformuló el problema reduciendo el número de comunas a 346, con una matriz de incidencia más pequeña, también se definió una nueva métrica de robustez, en la que cada comuna debía estar conectada de forma disjunta con otras dos comunas.
-          El nuevo problema fue planteado con programación entera y fue resuelto con el motor de optimización CPLEX, el método encontró una solución con una cobertura del 76.6% de conectividad de las comunas, que, si bien era una solución mejor que la primera, dejaba sin los beneficios de robustez a algunas zonas alejadas de por ejemplo, Santiago y sus alrededores.
-          Al tener algunas limitaciones de la propuesta hecha con la solución simplificada y con el objetivo de mejorar la solución actual, se implementó el algoritmo de Suurballe & Tarjan buscando encontrar un óptimo a la primera definición de robustez, el algoritmo generó una gran componente conectada que  cumple con los criterios de robustez originales y además es un 27% más barata. Sin embargo, a pesar de que la solución simplificada era un poco más cara, tenía algunas ventajas, por ejemplo los caminos se desviaban de rutas más propensas a desastres naturales, lo que la hacía más robusta la solución.
+          El Dr. Javier Bustos comenta que al inicio del proyecto fue necesario definir robustez en la red, lo que la SUBTEL entendía como: “Si se cae la conexión, ¿cuál es el porcentaje de red afectada? o ¿cuántos quedarían aislados al servicio?”. La idea de SUBTEL era tener un sistema dividido en cuatro componentes: analizador de robustez, análisis rápido de los datos, la cantidad de dinero que se necesitaba invertir y consultas online que debían ser respondidas rápidamente.
+          <br><br>
+          El proyecto tenía como información el mapa de la fibra óptica nacional, mapas de caminos, rutas de ferry y mapas de red eléctrica, por los cuales sería posible instalar la fibra. Por otra parte, Chile se divide en regiones, cada región se divide en provincias, y a su vez, las provincias se dividen en comunas. A partir de esto, quedó definida la robustez del servicio como la interconexión de dos comunas con por lo menos dos caminos disjuntos. Una vez teniendo la información de las posibles trayectorias de la fibra, un primer intento de obtención de la solución fue calcular las rutas o caminos entre cada par de comunas, de las 346 existentes, con la ayuda del algoritmo de Dijkstra, en una primera ejecución se encontró la ruta más corta entre dos comunas; posteriormente se quitaba esta ruta de la red y se ejecutaba nuevamente el algoritmo, encontrándose de esta manera una segunda ruta; sin embargo, en esta primera solución se presentaron algunos inconvenientes como, los elevados costos de agregar líneas debido a la gran cantidad de caminos encontrados en la solución, los cuales fueron 78,209 caminos, además era necesario verificar si los caminos propuestos eran factibles o viables, ya que en algunos casos no era posible la conexión entre comunas y hacía necesario ejecutar el algoritmo nuevamente.
+          <br><br>
+          Debido a la necesidad de encontrar una mejor solución, se reformuló el problema con una matriz de incidencia más pequeña, también se definió una nueva métrica de robustez en la que cada comuna debía estar conectada de forma disjunta con otras dos comunas. El nuevo problema fue planteado con programación entera y fue resuelto con el motor de optimización CPLEX, el método encontró una solución con una cobertura del 76.6% de conectividad de las comunas, que si bien era una solución mejor que la primera, dejaba sin los beneficios de robustez a algunas zonas alejadas de por ejemplo, Santiago y sus alrededores.
+          <br><br>
+          Con el objetivo de mejorar la solución actual y al tener algunas limitaciones de la propuesta hecha con la solución simplificada, como lo es el que no siempre se podían tomar las dos rutas más cortas o que simplemente al eliminar la primera ruta encontrada, el grafo resultante era disconexo, se implementó el algoritmo de Suurballe & Tarjan, buscando encontrar un óptimo a la primera definición de robustez, este algoritmo generó una gran componente conectada que  cumple con los criterios de robustez originales y además es un 27% más barata. Sin embargo, a pesar que la solución simplificada era un poco más cara, tenía algunas ventajas, por ejemplo los caminos se desviaban de rutas más propensas a desastres naturales, lo que la hacía más robusta la solución.
         </p>
       </div>
 
@@ -139,7 +141,7 @@
       <div class="col span_4_of_4">
         <h4 id="titulos"> <u>Ligas de interés</u> </h4>
         <ul style="padding-left:5%;">
-          	<li><a href="https://github.com/niclabs/InternetResilience" target="_blank"  id="links">Internet Resilience [GITHUB]<a></li>
+            <li><a href="https://github.com/niclabs/InternetResilience" target="_blank"  id="links">Internet Resilience [GITHUB]<a></li>
             <li><a href="https://link.springer.com/chapter/10.1007/978-3-030-38965-9_15" target="_blank"  id="links">Space Geometry Effect over the Internet as a Physical-Logical Interdependent Network [EN LÍNEA]<a></li>
             <li><a href="https://en.wikipedia.org/wiki/Suurballe%27s_algorithm" target="_blank"  id="links">Suurballe's algorithm [WIKIPEDIA]<a></li>
             <li><a href="https://www.hindawi.com/journals/complexity/2020/2363514/" target="_blank"  id="links">EA Survey on Frameworks Used for Robustness Analysis on Interdependent Networks".
@@ -156,7 +158,7 @@
       <!-- START FOOTER -->
       <div class="section group" style="background-color: #cde494;" >
       <div class="col span_1_of_4">
-      	<br>
+        <br>
         <table class = "contacto">
           <tr><td id="datos"><strong>Contáctanos:</strong></td></tr>
           <tr>
@@ -164,7 +166,7 @@
           </tr>
           <tr>
             <td id="datos">
-           		<a href="https://www.fime.uanl.mx/" target="_blank" style="text-decoration: none; white-space: nowrap;">Facultad de Ingeniería Mecánica y Eléctrica</a>
+              <a href="https://www.fime.uanl.mx/" target="_blank" style="text-decoration: none; white-space: nowrap;">Facultad de Ingeniería Mecánica y Eléctrica</a>
             </td>
           </tr>
           <tr>
@@ -172,21 +174,21 @@
           </tr>
           <tr>
             <td id="datos">
-            	<div class="col span_2_of_4">
-            		<a href="https://www.facebook.com/groups/331693343578368/" target="_blank">
-                		<i class="fa fa-facebook-square"  style="font-size:150%;"></i></a> &nbsp;
-                	<a href="https://twitter.com/PISISFIME" target="_blank"><i class="fa fa-twitter"  style="font-size:150%;"></i></a> &nbsp;
-              		<a href="https://www.youtube.com/channel/UChks9qIy0giFdRu8Fq_6JrQ" target="_blank">
-              			<i class="fa fa-youtube" style="font-size:150%; padding-bottom: 15%;"> </i>
-              		</a>
-            	</div>
+              <div class="col span_2_of_4">
+                <a href="https://www.facebook.com/groups/331693343578368/" target="_blank">
+                    <i class="fa fa-facebook-square"  style="font-size:150%;"></i></a> &nbsp;
+                  <a href="https://twitter.com/PISISFIME" target="_blank"><i class="fa fa-twitter"  style="font-size:150%;"></i></a> &nbsp;
+                  <a href="https://www.youtube.com/channel/UChks9qIy0giFdRu8Fq_6JrQ" target="_blank">
+                    <i class="fa fa-youtube" style="font-size:150%; padding-bottom: 15%;"> </i>
+                  </a>
+              </div>
             </td>
           </tr>
         </table>
         <br>
       </div>
       <div class="col span_1_of_4">
-      	<br>
+        <br>
         <table>
           <tr>
             <td id="datos">
@@ -200,8 +202,8 @@
         <br>
       </div>
       <div class="col span_1_of_4">
-      	<br>
-      	<table>
+        <br>
+        <table>
           <tr>
             <td id="datos">
             <iframe style="padding-left:12%;" width="200" id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14377.551632138968!2d-100.32078997621394!3d25.7246825884551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662945396e136af%3A0x742b1e8288ee57a8!2sUniversidad%20Aut%C3%B3noma%20de%20Nuevo%20Le%C3%B3n!5e0!3m2!1ses!2smx!4v1599519969703!5m2!1ses!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -211,7 +213,7 @@
         <br>
       </div>
       <div class="col span_1_of_4">
-      	<br>
+        <br>
         <img id="logo5" src="../images/somosuni_logo.png">
         <br>
       </div>
