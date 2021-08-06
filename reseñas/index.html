@@ -1,215 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Reseñas PISIS 2020</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-      @media only screen and (min-width: 360px) and (max-width: 640px) {
-        #map{
-          width: 200px;
-        }
-      }
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        #map{
-          width: 400px;
-        }
-      }
-      a:hover{
-        color:#e0bf04;
-      }
-    </style>
-  </head>
-  
-  <body > 
-    <!-- START LOGOS -->
-    <div class="section group">
-      <div class="col span_1_of_4">
-        <a href="https://www.uanl.mx/" target="_blank"><img id="logo1" src="images/uanl_logo.png" alt="uanl logo"></a>
-      </div>
-      <div class="col span_1_of_4">
-        <a href="https://www.fime.uanl.mx/" target="_blank"><img id="logo2" src="images/fime_logo.png" alt="fime logo"></a>
-      </div>
-      <div class="col span_1_of_4">
-        <a href="http://pisis.fime.uanl.mx/" target="_blank"><img id="logo3" src="images/pisis_logo.png" alt="pisis logo"></a>
-      </div>
-      <div class="col span_1_of_4">
-        <img id="logo4" src="images/uanl_vision_logo.png" alt="uanl vision logo">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Reseñas PISIS 2020</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="../../2021/reviews/style.css" rel="stylesheet">
+
+  <!-- Font-Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google font-->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.uanl.mx/"><img id="logo1" src="images/uanl_logo.png" alt="uanl logo"></a>
+      <a class="navbar-brand" href="https://www.fime.uanl.mx/"><img id="logo2" src="images/fime_logo.png" alt="fime logo"></a>
+      <a class="navbar-brand" href="http://pisis.fime.uanl.mx/"><img id="logo3" src="images/pisis_logo.png" alt="pisis logo"></a>
+      <button id="nav-toggle-button" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Reseñas anteriores
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="index.html">Ago-Dic 2020</a>
+              <a class="dropdown-item" href="../../2021/reviews/index.html">Feb-Jun 2021</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="https://www.facebook.com/groups/331693343578368/">
+              <i class="fa fa-facebook-square fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href=" https://twitter.com/PISISFIME">
+              <i class="fa fa-twitter-square fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="https://www.youtube.com/channel/UChks9qIy0giFdRu8Fq_6JrQ">
+              <i class="fa fa-youtube-square fa-2x"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <center><h2>CICLO DE SEMINARIOS AGOSTO - DICIEMBRE 2020</h2></center>
-    <!-- END LOGOS -->
+  </nav>
 
-      <!--START TITULO DE LA CHARLA-->
-      <!--<center><h1 style ="color:green;">Reseñas</h1> </center>-->
-      <!--END TITULO DE LA CHARLA-->
-    <hr>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="section group">
-      <div class="col span_4_of_4">
-      <h2 id="titulos">Reseñas </h2>
-      <ol>
-        <li><a href="session1/index.html" target="_blank">Reseña: Comunicación de la Ciencia.</a></li>
-        Impartida por: Dra. Elisa Schaeffer y Dr. Arturo Berrones &nbsp; &nbsp; &nbsp;
-        <a href="https://youtu.be/OMv11CrT79k"  target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>
-        <br><br>
+  <!-- Page Content -->
+  <div class="container">
 
-        <li><a href="session2/index.html" target="_blank">Reseña: Sesgos en la web.</a></li>
-        Impartida por: Dr. Ricardo Baeza-Yates &nbsp; &nbsp; &nbsp;
-        <a href="https://youtu.be/UuhQ9qxWp24" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>
-        <br><br>
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Reseñas junio - diciembre 2020 </h1>
 
-        <li><a href="session3/index.html" target="_blank">Reseña: De investigación académica a ciencia de datos empresarial.</a></li>
-        Impartida por: M. C. José Anastacio Hernández Saldaña &nbsp; &nbsp; &nbsp;
-        <a href="https://youtu.be/DaX8eyGe6eI" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>
-        <br><br>
-          
-        <li><a href="session4/index.html" target="_blank">Reseña: Robustez de la red óptica chilena.</a> </li>
-        Impartida por: Dr. Javier Bustos Jiménez &nbsp; &nbsp; &nbsp;
-        <a href="https://youtu.be/s5tqLs3CrxQ" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>  
-        <br><br>
-          
-        <li><a href="session5/index.html" target="_blank">Reseña: Selección de cartera de proyectos con información imprecisa o bajo incertidumbre.</a></li>
-        Impartida por: Dra. Nancy Maribel Arratia Martínez &nbsp; &nbsp; &nbsp;
-        <a href="https://youtu.be/0E-VsvHPLMU" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a> 
-        <br><br>
-          
-        <li><a href="session6/index.html" target="_blank">Reseña: Detección de pre-microARNs con CNNs.</a></li>
-        Impartida por: M. C. Jorge Alberto Cordero Cruz &nbsp; &nbsp; &nbsp;
-        <a href="https://youtu.be/n-PiORULgdA" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a> 
-        <br><br>
-          
-        <li><a href="session7/index.html" target="_blank">Reseña: Marca de agua digital.</a></li>
-          Impartida por: Ing. Victor Briones &nbsp; &nbsp; &nbsp;
-          <a href="https://youtu.be/oFM5BuZPJdI" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a> 
-          <br><br>
-          
-        <li><a href="session8/index.html" target="_blank">Reseña: Gestión de equipos como ingeniero de software.</a></li>
-        Impartida por: M. C. Gerardo Saúl Gausin Valle &nbsp; &nbsp; &nbsp;
-        <a href="https://youtu.be/MVN-7Gmjmn4" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>  
-        <br><br>
-          
-        <li><a href="session9/index.html" target="_blank">Reseña: Vida después del posgrado.</a></li>
-        Impartida por: Dr. Luis A. Benavides Vázquez &nbsp; &nbsp; &nbsp;
-        <a href="https://youtu.be/5vjq-127K7I" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>  
-        <br><br>
-          
-        <li><a href="session10/index.html" target="_blank">Reseña: Incentivos en la teoría de control.</a></li>
-          Impartida por: Dr. Manuel Jimenez Lizarraga &nbsp; &nbsp; &nbsp; 
-          <a href="https://youtu.be/vP_4rlg2bpM" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a> 
-          <br><br>
-          
-          <li><a href="session11/index.html" target="_blank">Reseña: Caminatas aleatorias.</a></li>
-          Impartida por: Dr. Francisco Javier Almaguer Martínez &nbsp; &nbsp; &nbsp; 
-          <a href="https://youtu.be/p9VveKcJXok" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>
-          <br><br>
-          
-        <li><a href="session12/index.html" target="_blank">Reseña: Autómatas celulares para análisis de datos.</a></li>
-          Impartida por: M. C. Astrid González Leyva &nbsp; &nbsp; &nbsp;
-          <a href="https://youtu.be/7Jo4bbZaWBU" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>
-          <br><br>
-          
-          <li><a href="session13/index.html" target="_blank">Reseña: Un problema de localización e inventarios.</a></li>
-          Impartida por: Dra. Nelly Hernández &nbsp; &nbsp; &nbsp;
-          <a href="https://youtu.be/iFaRdsWK82k" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>
-          <br><br>
-          
-          <li><a href="session14/index.html" target="_blank">Uso de inteligencia computacional para resolver problemas altamente dimensionales.</a></li>
-          Impartida por: Dr. Gregorio Toscano Pulido &nbsp; &nbsp; &nbsp;
-          <a href="https://youtu.be/rVHwg7ILiTk" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a> 
-          <br><br>
-          
-          <li><a href="session15/index.html" target="_blank">Distributing live video over the internet.</a></li>
-          Impartida por: M. Sc. Logan Hanks  &nbsp; &nbsp; &nbsp;
-          <a href="https://youtu.be/4vXvYiiGltU" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>
-          <br><br>
-          
-          <li><a href="session16/index.html" target="_blank">Evaluaciones multi-método en el contexto de la psicología clínica.</a></li>
-          Impartida por: Lic. Daniela Escobedo Belloc &nbsp; &nbsp; &nbsp;
-           <a href="https://youtu.be/DkyTgIPJE78" target="_blank">Enlace a la charla <i style="font-size:150%;" class="fa fa-youtube"></i> </a>
-      </ol>
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center mb-4">
+      <li class="page-item disabled">
+        <a class="page-link" href="#">&larr; 2020</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="../../2021/reviews/index.html">2021 &rarr;</a>
+      </li>
+    </ul>
+
+    <!-- Blog Post -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r1_1.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Comunicación en la ciencia</h2>
+            <p class="card-text">En esta primera sesión , los profesores del Posgrado en Ingeniería de Sistemas, Dr. Arturo Berrones y Dra. Elisa Schaeffer,  conversan sobre sus percepciones sobre la importancia y las formas que toma la comunicación de la ciencia. Nos compartirán su perspectiva de cómo ésta ha evolucionado, primero con la globalización y la tecnología, y más recientemente por retos actuales como la pandemia de COVID-19.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session1/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 4 de septiembre 2020 por
+        <a>Dra. Elisa Schaeffer, Dr. Arturo Berrones</a>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-      <!-- START FOOTER -->
-      <div class="section group" style="background-color: #cde494;" >
-        <div class="col span_1_of_4">
-          <br>
-          <table class = "contacto">
-            <tr><td id="datos"><strong>Contáctanos:</strong></td></tr>
-            <tr>
-              <td id="datos"><a href="https://www.uanl.mx/" target="_blank" style="text-decoration: none;">Universidad Autónoma de Nuevo León</a></td>
-            </tr>
-            <tr>
-              <td id="datos">
-                <a href="https://www.fime.uanl.mx/" target="_blank" style="text-decoration: none; white-space: nowrap;">Facultad de Ingeniería Mecánica y Eléctrica</a>
-              </td>
-            </tr>
-            <tr>
-              <td id="datos"><a href="http://pisis.fime.uanl.mx/home/?lang=es" target="_blank" style="text-decoration: none;">Posgrado de Ingeniería en Sistemas</a></td>
-            </tr>
-            <tr>
-              <td id="datos">
-                <div class="col span_2_of_4">
-                  <a href="https://www.facebook.com/groups/331693343578368/" target="_blank">
-                      <i class="fa fa-facebook-square"  style="font-size:150%;"></i></a> &nbsp;
-                    <a href="https://twitter.com/PISISFIME" target="_blank"><i class="fa fa-twitter"  style="font-size:150%;"></i></a> &nbsp;
-                    <a href="https://www.youtube.com/channel/UChks9qIy0giFdRu8Fq_6JrQ" target="_blank">
-                      <i class="fa fa-youtube" style="font-size:150%; padding-bottom: 15%;"> </i>
-                    </a>
-                </div>
-              </td>
-            </tr>
-          </table>
-          <br>
-        </div>
-        <div class="col span_1_of_4">
-          <br>
-          <table>
-            <tr>
-              <td id="datos">
-              <i class="fa fa-map-marker" style="font-size:150%; color:#f9d437;"></i><strong>Dirección:</strong> 
-                <p>
-                  Universidad Autónoma de Nuevo León, Ciudad Universitaria, Pedro de Alba s/n San Nicolás de los Garza, Nuevo León C.P. 66451
-                </p>
-              </td>
-            </tr>
-          </table>
-          <br>
-        </div>
-        <div class="col span_1_of_4">
-          <br>
-          <table>
-            <tr>
-              <td id="datos">
-              <iframe style="padding-left:12%;" width="200" id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14377.551632138968!2d-100.32078997621394!3d25.7246825884551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662945396e136af%3A0x742b1e8288ee57a8!2sUniversidad%20Aut%C3%B3noma%20de%20Nuevo%20Le%C3%B3n!5e0!3m2!1ses!2smx!4v1599519969703!5m2!1ses!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-              </td>
-            </tr>
-          </table>
-          <br>
-        </div>
-        <div class="col span_1_of_4">
-          <br>
-          <img id="logo5" src="images/somosuni_logo.png">
-          <br>
+
+    <!-- Blog Post -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r2_1.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Sesgos en la web</h2>
+            <p class="card-text">La web es el medio de comunicación más poderoso y el repositorio público de datos más grande que la humanidad ha creado, siendo el principal desafío de los motores de búsqueda y otros sitios web que se basan en datos web el evaluar la calidad de estos. Todas las personas tienen sesgos, el contenido en la web, las interacciones con ella están contaminados con muchos prejuicios. El sesgo de datos incluye redundancia y spam, mientras que el sesgo de interacción incluye los sesgos de actividad y de presentación, además de otros sesgos adicionados por los algoritmos, particularmente en el contexto de los sistemas de búsqueda y recomendación. El ciclo termina con sesgos de segundo orden como la personalización y la republicación de contenido. Como el sesgo genera más sesgo, es importante la reducción de este, el uso del contexto y otras técnicas, para romper el efecto burbuja.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session2/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
         </div>
       </div>
-    <!-- END FOOTER -->
-  </body>
+      <div class="card-footer text-muted">
+        Presentada el 11 de septiembre 2020 por
+        <a> Dr. Ricardo Baeza-Yates</a>
+      </div>
+    </div>
+    
+    <!-- Blog Post -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r3_1.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">De investigación académica a ciencia de datos empresarial</h2>
+            <p class="card-text">El proceso de recolección de datos, investigación y análisis en el ambiente académico puede ser muy diferente al usado en empresas que manejan grandes volúmenes de datos. En esta presentación el ponente hablará sobre la experiencia de dejar de pensar la investigación de forma artesanal y monolítica para pasar a una forma automatizada y distribuida.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session3/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 18 de septiembre 2020 por
+        <a>M.C. José A. Hernández Saldaña</a>
+      </div>
+    </div>
+    
+    <!-- Blog Post -->
+    
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r4_1.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Robustez de la red óptica chilena</h2>
+            <p class="card-text">La propensión de Chile a los desastres naturales hace necesario contar  con una red de Internet resistente que garantice la conectividad nacional aún durante las crisis. En 2015, el gobierno chileno solicitó al equipo del Dr. Bustos un estudio de la robustez de la red óptica chilena y una propuesta para mejorarla. Esta presentación muestra los hallazgos y el enfoque basado en grafos abordado para construir la solución y la estimación de costos, junto con recomendaciones para la mejora de los algoritmos. El equipo concluyó que la red de Internet de Chile no es resistente y comparte cómo encontraron rutas rentables que deben construirse para garantizar una red sólida. Los resultados y propuestas están siendo utilizados actualmente por el gobierno chileno para analizar la factibilidad del proyecto y priorizar la construcción de rutas.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session4/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 25 de septiembre 2020 por
+        <a>Dr. Javier Bustos Jiménez</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r5_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Selección de cartera de proyectos con información imprecisa o bajo incertidumbre</h2>
+            <p class="card-text">El problema de selección de cartera de proyectos consiste en elegir un conjunto de propuestas que optimicen uno o más objetivos considerando la disponibilidad de recursos y políticas de asignación. Este problema surge en muchas organizaciones que destinan y/o gestionan fondos públicos o  privados para el financiamiento de proyectos en distintas áreas. En esta  plática se presenta el caso de selección de cartera de proyectos con  información imprecisa, misma que es tratada mediante números difusos.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session5/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 02 de octubre 2020 por
+        <a>Dra. Nancy Maribel Arratia Martínez</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r6_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Detección de pre-microARNs con CNNs</h2>
+            <p class="card-text">En seres humanos, los micro-ARN se asocian a varias enfermedades y presentan características idóneas para ser usados como biomarcadores no invasivos. El descubrimiento de micro-ARN utilizando métodos experimentales es un proceso complicado debido a las condiciones ambientales y biológicas requeridas. Como parte de un proyecto de tesis, se evaluaron los beneficios de las CNNs para la detección de precursores de micro-ARN. Los resultados obtenidos en varias bases de datos muestran que con estas se obtienen resultados similares a otros métodos computacionales y simplifican el análisis de secuencias candidatas.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session6/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 09 de octubre 2020 por
+        <a>M.C. Jorge A. Cordero Cruz</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r7_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Marca de agua digital</h2>
+            <p class="card-text">Esconder un mensaje en una obra digital, el cual está relacionado con la misma, es una práctica conocida como marca de agua digital. Es una técnica de ocultación de información relacionada ligeramente con la esteganografía. Su uso más común es el de protección de derechos de autor sobre la obra, pero también se utiliza para otros fines como: protección de copias, autenticidad de información, detección de medios, e incluso recuperación de información. El marcado de agua digital ganó popularidad a mediados de 1990 como tema de investigación, sin embargo, la práctica ha existido por muchos años.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session7/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 16 de octubre 2020 por
+        <a> Ing. Víctor Briones </a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r8_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Gestión de equipos como ingeniero de software</h2>
+            <p class="card-text">Como profesionista del área de software nos especializamos y/o adaptamos a las tendencias   tecnológicas permitiendo distinguir sobre qué circunstancias una tecnología es mejor que otra y sus mejores prácticas. A pesar de ello, hay un punto que no siempre es tema de  conversación entre ingenieros de software y es la gestión de un equipo de desarrollo. Desafortunadamente por mejores que seamos en alguna tecnología, si no sabemos administrar personal no podremos llegara concluir objetivos más ambiciosos. Con esto en mente, se busca proveer de los primeros pasos para poder comenzar con la gestión de un equipo.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session8/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 23 de octubre 2020 por
+        <a>M.C. Saúl Gausin Valle</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r9_1.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Vida después del posgrado</h2>
+            <p class="card-text">Si estás por terminar (o empezar) un posgrado seguro te has de preguntar qué puedo hacer después.  En esta plática se presentan algunas alternativas laborales y profesionales existentes al acabar el posgrado en Ingeniería de Sistemas (o afines). También se exponen algunas situaciones que es común enfrentar, así como determinadas dificultades y las herramientas más usadas para lidiar con ellas. Esto para dar un panorama general que te ayudará a tener una transición más fluida a la vida después del posgrado.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session9/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 30 de octubre 2020 por
+        <a>M.C. Jorge A. Cordero Cruz</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r10_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Incentivo en la teoría de control</h2>
+            <p class="card-text">El incentivo en un juego donde existe una jerarquía de dos niveles se ve como la idea de declarar una recompensa o penalización para el jugador de menor jerarquía (el seguidor), el cual depende de la elección de su decisión. Esto se hace para provocar un comportamiento en el seguidor que sea favorable para el jugador de mayor jerarquía (el líder). Se presentan ejemplos estáticos sencillos y se termina desarrollando un esquema de incentivo basado en un control en retroalimentación para un juego dinámico a tiempo continuo, donde las herramientas de control óptimo son utilizadas.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session10/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 06 de noviembre 2020 por
+        <a>Dr. Manuel Jiménez</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r11_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Paseos aleatorios</h2>
+            <p class="card-text">Los paseos aleatorios son construcciones matemáticas diseñadas para el análisis de eventos azarosos. Con ellos es posible modelar sistemas “híbridos” formados por una componente determinista y un “ruido” estocástico. Desde una perspectiva probabilística, los paseos aleatorios representan un punto de partida para abordar el estudio de sistemas complejos tales como, las fluctuaciones de acciones en mercados financieros, la información de secuencias nucleotídicas de ADN y la distribución de los números primos. Algunos aspectos teóricos y prácticos de estos problemas, su relación con los paseos aleatorios y su implementación numérica en R forman el contenido de la presente charla.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session11/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 13 de noviembre 2020 por
+        <a>Dr. Francisco Javier Almaguer Martínez</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r12_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Autómatas celulares para análisis de datos</h2>
+            <p class="card-text">Los datos que se procesan de manera cotidiana en el ámbito laboral no siempre son los suficientes para ser considerados una muestra razonable. Esta información puede además no incluir posibles escenarios que influyen en la toma de decisiones. El uso de autómatas celulares como herramienta permite generar simulaciones y obtener una mayor comprensión, así como estadísticos clave del proceso modelado ya sea aplicado a nivel físico, químico, biológico o social. </p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session12/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 20 de noviembre 2020 por
+        <a>M.C. Astrid González Leyva</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r13_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Un problema de localización e inventario</h2>
+            <p class="card-text">Se abordará un problema de localización de instalaciones considerando el inventario en éstas. Las decisiones involucradas incluyen definir cuántas instalaciones abrir, dónde localizarlas, qué minoristas atenderán, así como la política de inventario a manejaren cada instalación seleccionada. Considerando el escenario de demandas inciertas, el objetivo del problema consiste en minimizar el costo total asociado a las decisiones, mientras se asegura un nivel de servicio deseado. </p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session13/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 27 de noviembre 2020 por
+        <a>Dra. Nelly Monserrat Hernández González</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r14_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Uso de inteligencia computacional para resolver problemas altamente dimensionales</h2>
+            <p class="card-text">Hoy en día se generan grandes volúmenes de datos, situación que ha generado problemas hasta hace poco inexistentes, estos requieren ser resueltos en tiempos cortos, además del desarrollo de nuevos algoritmos. La inteligencia computacional es un conjunto de técnicas bio-inspiradas exitosas para la solución algunos de estos "nuevos" problemas. Se presentarán datos interesantes sobre el volumen de información generada a cada segundo. Se introducirá inteligencia computacional y los paradigmas asociados, se revisarán problemas relacionados con la "maldición de la dimensionalidad", entre otras.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session14/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 04 de diciembre 2020 por
+        <a> Dr. Gregorio Toscano Pulido</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r15_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Distributing Live Video over the Internet</h2>
+            <p class="card-text">Over the past 15 years, the number of people consuming digital video online has grown enormously. In 2005, Adobe Flash was the dominant technology, but within 10 years was replaced by protocols built around open standards like HTTP and HTML. This talk gives a high-level overview of one protocol in particular, HTTP Live Streaming (HLS). How does it work, and how does its design affect the experience of live interactive events? We also briefly compare HLS with the approach taken by WebRTC.</p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session15/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 1 de diciembre 2020 por
+        <a>M.C. Jorge A. Cordero Cruz</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../../images/r16_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="card-title">Evaluaciones multi-método en el contexto de la Psicología Clínica</h2>
+            <p class="card-text">La comprensión de las condiciones psicológicas y neuropsiquiátricas en los contextos clínicos y de investigación requiere utilizar metodologías y técnicas diversas.  Así, en las últimas décadas se ha favorecido implementar modelos de evaluación en los que los constructos se abordan con una combinación de instrumentos de auto-reporte y de ejecución. Su análisis se logra a través de métodos mixtos cuali-cuantitativos que moderan el sesgo metodológico e incrementan la validez y la utilidad de los resultados.   </p>
+            <a href="https://elisa.dyndns-web.com/teaching/sem/2020/reviews/session16/index.html" class="btn btn-primary">Leer &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Presentada el 18 de diciembre 2020 por
+        <a>Esp. Daniela Escobedo Belloc</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4" style="margin-top: 2%;">
+          <i class="fa fa-map-marker fa-2x" style=" color:#df3530fa;"></i><strong>Dirección:</strong> 
+          <p>Universidad Autónoma de Nuevo León, Ciudad Universitaria, Pedro de Alba s/n San Nicolás de los Garza, Nuevo León C.P. 66451</p>
+        </div>
+        <div class="col-lg-4 mb-4" style="margin-top: 2%;">
+          <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14377.551632138968!2d-100.32078997621394!3d25.7246825884551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662945396e136af%3A0x742b1e8288ee57a8!2sUniversidad%20Aut%C3%B3noma%20de%20Nuevo%20Le%C3%B3n!5e0!3m2!1ses!2smx!4v1599519969703!5m2!1ses!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <img style="width:100%; margin-top: 10%;" src="images/somosuni_logo.png">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
+
