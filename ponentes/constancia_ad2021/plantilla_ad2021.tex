@@ -1,5 +1,5 @@
 \documentclass[15pt,a4paper]{scrartcl}              
-\usepackage[landscape,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry} 
+\usepackage[landscape,left=1.5cm,right=1.5cm,top=1.7cm,bottom=1.5cm]{geometry} 
 \usepackage{graphicx}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
@@ -30,9 +30,9 @@
 %\newif\ifMujer\Mujertrue
 
 
-\newcommand{\nombre}{Jair Rafael Carrillo Ávila}
-\newcommand{\tituloponencia}{Openair: Un caso de estudio de la calidad del aire en Monterrey}
-\newcommand{\fecha}{14 de mayo del 2021} %la fecha va en el formato: <día en dígitos> de <mes en letra> del 2021
+\newcommand{\nombre}{Juan Pérez}
+\newcommand{\tituloponencia}{El rol de la simulación en la Sociedad 5.0}
+\newcommand{\fecha}{6 de agosto del 2021} %la fecha va en el formato: <día en dígitos> de <mes en letra> del 2021
 
 
 \begin{document}
@@ -51,13 +51,12 @@
 		\includegraphics[scale=0.3]{pisis_gris.png}
 		
 		\vspace{2.5cm}
-		\includegraphics[scale=0.25]{uanl_vision.png}
+		\includegraphics[scale=0.3]{uanl_vision.png}
 		\end{center}
 	\end{minipage}
 	\begin{minipage}[c]{0.9\textwidth}
 		%% encabezado
-		\vspace{1 cm}
-		\centering \setstretch{1.5} {
+		\centering \setstretch{1} {
 			{\large \textbf{La Universidad Autónoma de Nuevo León}}\\
 			\vspace{0.3cm}
 			{\normalsize a través de la}\\
@@ -66,17 +65,17 @@
 		
 			%Cuerpo del diploma
 			\centering \setstretch{1.5}  
-			{	\vspace{0.3cm}
-				{\normalsize otorga la presente constancia a\\}
-				\vspace{0.2cm}
-				{\large \textbf{\nombre}\\}
-				\vspace{0.2cm}
-				{\normalsize por su participación como \ifMujer{expositora }\else{expositor }\fi de la ponencia\\}
-				\vspace{.2 cm}
-				{\large \textbf{``\tituloponencia'',}\\}
-				\vspace{0.2cm}
-				{ en el $2^{\circ}$ Ciclo de Conferencias 2021 del Posgrado en Ingeniería de Sistemas.}
-			}
+		{	\vspace{0.3cm}
+			{\normalsize otorga la presente constancia a\\}
+			\vspace{0.2cm}
+			{\large \textbf{\nombre}\\}
+			\vspace{0.2cm}
+			{\normalsize por su participación como \ifMujer{expositora }\else{expositor }\fi de la ponencia\\}
+			\vspace{.2 cm}
+			{\large \textbf{``\tituloponencia'',}\\}
+			\vspace{0.2cm}
+			{ en el $2^{\circ}$ Ciclo de Conferencias 2021 del Posgrado en Ingeniería de Sistemas.}
+		}
 			
 			\vspace{0.8cm}
 			\centering
@@ -84,16 +83,21 @@
 			ALERE FLAMMAM VERITATIS\\
 			A \fecha \\
 			Cd. Universitaria, San Nicolás de los Garza} 
-			
-			\vspace{2cm}
-			%% firmas
+		
+			\vspace{1.3cm}
+		\begin{center}
 			{\small
-			\signature{}{Dra. Satu Elisa Schaeffer \\ Coordinadora del Seminario}
-			\hspace{2cm}
-			\signature{}{Dr. César Emilio Villarreal Rodríguez \\ Coordinador Académico}
-			\hspace{2cm}}
-			
-
+			\begin{tabular}{l l l l l l l l}
+				\signature{}{M.C. José Alberto Benavides Vázquez\\ Presidente del Comité de Publicidad} &  \signature{}{M.C. Gerardo Palafox Castillo \\ Presidente del Comité de Ponentes} & $\,$ & $\,$& $\,$ & $\,$ & $\,$ & $\,$ \\
+			\end{tabular}
+		}
+		\end{center}
+			\vspace{6 mm}
+			{\small
+					\signature{}{M.C. Uriel Iram Lezama Lope
+						 \\ Presidente del Comité de Reseñas}
+					\hspace{8.5cm}
+			}
 	\end{minipage}
 	
 \end{document}
