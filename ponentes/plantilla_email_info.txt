@@ -1,21 +1,33 @@
-Estimado [Grado y Nombre del Ponente],
+Estimado [grado, nombre],
 
-Le escribimos el presente con el fin de informarle los detalles de su próxima presentación en el Segundo Ciclo de Conferencias 2020 del Posgrado en Ingeniería en Sistemas de la UANL.
+Le escribimos el presente con el fin de informarle los detalles de su próxima presentación en el Segundo Ciclo de Conferencias 2021 del Posgrado en Ingeniería en Sistemas de la UANL.
 
- Su ponencia está agendada para el próximo [fecha, hora] (UTC-05:00), bajo el título [título], y podrá verse de forma libre a través del siguiente enlace: [enlace]. La exposición tiene una duración de 15 a 30 minutos, dejando el tiempo restante para responder preguntas del público. La siguiente información será compartida con la publicidad del seminario: [La siguiente información es recabada a priori por el comité de ponentes]
-•	Grado y nombre que aparecerá en la constancia: [grado y nombre del ponente]
-• Biografía: [Breve biografía]
-•	Institución de procedencia: [Institución de procedencia]
-•	Website: Algún website]
+Su ponencia está agendada para el próximo [día, mes] a las 12:00 pm, bajo el título [título], y podrá verse de forma libre a través de YouTube por el siguiente enlace: [enlace]. La exposición tiene una duración de 20 a 30 minutos, dejando el tiempo restante para responder preguntas del público. La siguiente información será compartida con la publicidad del seminario, por lo que le pedimos corregir cualquier detalle: 
 
-Le pedimos de favor nos haga saber de alguna modificación que le gustaría hacer a estos datos, y si gusta, nos haga llegar una fotografía para incluirla. Además, le solicitamos por favor un resumen de su plática, con no más de cien palabras. 
+• Grado y nombre que aparecerá en la constancia:
 
-El día del evento, la Dra. Elisa Schaeffer le contactará cinco minutos antes de la hora programada para proporcionarle el enlace de la reunión Google Meet (la ponencia la dará usted a través de esta). Si desea que este enlace se le haga llegar por un medio en particular, por favor indíquenoslo. Así mismo, háganos saber si requiere una prueba de conexión para probar la transmisión de audio y video.
+• Biografía: 
 
-Sin más por el momento, quedamos a su disposición para cualquier inquietud que pudiera tener.
+• Institución de procedencia: 
+
+Así mismo, si nos lo permite, compartiremos los siguientes enlaces. Háganos saber si desea agregar, eliminar o modificar alguno: 
+
+• Website: 
+
+Le pedimos de favor nos haga saber cualquier modificación que le gustaría hacer a estos datos, y si está de acuerdo, nos haga llegar una fotografía para incluirla en la publicidad del evento. Además, le solicitamos por favor un resumen de su plática, con no más de cien palabras. Le agradeceremos nos haga llegar la información con suficiente antelación, para poder realizar la promoción correspondiente del evento.
+
+El día del evento nuestro compañero J. Alberto Benavides le contactará quince minutos antes de la hora programada para proporcionarle el enlace de la reunión Google Meet (la ponencia la dará usted a través de esta plataforma). Si desea que este enlace se le haga llegar por un medio en particular, por favor indíquenoslo. Así mismo, háganos saber si requiere una prueba de conexión para probar la transmisión de audio y video.
+
+
+Favor de confirmar que recibió la información, aún si no hay correcciones por hacer. 
+
+Sin más por el momento, quedamos a su disposición para cualquier inquietud que pudiera tener. 
+
 
 Atentamente,
 
+
+
 Comité de ponencias
-Ciclo de conferencias Agosto – Diciembre 2020 
-Posgrado en ingeniería de Sistemas, FIME, UANL.
+Ciclo de conferencias Agosto – Diciembre 2021 
+Posgrado en Ingeniería de Sistemas, FIME, UANL.
